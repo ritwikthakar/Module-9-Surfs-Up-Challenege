@@ -7,7 +7,7 @@ Listed below are the three key differences in weather between June and December.
 -	In both months for the last 7 years, the difference in the standard deviation of the temperature has been less than 0.5 units with uncertainty being higher only by 0.5 units in the month of December.
 -	The lowest recorded temperature in December has been 56 degrees while the highest recorded has been 83 degrees. The lowest recorded temperature for June is 64 degrees while the highest recorded has been 85 degrees for the last 7 years.  This data tells us that extreme temperature conditions are normally seen in the month of December.
 ![June Temperatures](https://github.com/ritwikthakar/Module-9-Surfs-Up-Challenege/blob/main/Resources/June%20Temps.PNG)
-![Dec Temperatures]()
+![Dec Temperatures](https://github.com/ritwikthakar/Module-9-Surfs-Up-Challenege/blob/main/Resources/Dec%20Temps.PNG)
 ## Summary
 Based on the results above, we can see that temperature wise, the difference between temperatures in June & December has been negligible. Temperatures have been mostly high. The lowest temperature recorded over the last 7 years has been 56 degrees which reassures us that the ice cream & Surf Shop business could be done through the year.
 ## Recommendations
