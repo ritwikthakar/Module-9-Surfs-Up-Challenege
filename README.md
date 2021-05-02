@@ -13,17 +13,25 @@ Based on the results above, we can see that temperature wise, the difference bet
 -	Precipitation: We can run the following query to check for precipitation. 
 After importing all dependencies to and then preparing an engine, we can
 use the following code to shortlist for June & December measurements.
+```python
  june_precp = session.query(Measurement).filter(extract('month', Measurement.date) == 6)
  dec_precp = session.query(Measurement).filter(extract('month', Measurement.date) == 6)
-after this we need to pass the precipitation data through a list 
+ ``` 
+ After this, we need to pass the precipitation data through a list
+```python
 june_precp_list = [precip.prcp for prcp in june_precp]
 dec_precp_list = [precip.prcp for prcp in dec_precp]
+```
 Finally, we can pass the above two lists through 2 separate data frames to get an idea as to how
 the precipitation levels might affect the business.
 
 -	Stations: We can use the following code to analyse by stations.
+```python
 session.query(func.count(Station.station)).all()
-will give us the number of stations.
+```
+This will give us the number of stations.
+```python
 session.query(Measurement.station, func.count(Measurement.station)).\
 group_by(Measurement.station).order_by(func.count(Measurement.station).desc()).all()
-will group data by stations and arrange it in descending order. We can further enchance our analysis based on stations.
+```
+This will group data by stations and arrange it in descending order. We can further enchance our analysis based on stations.
